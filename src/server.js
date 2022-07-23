@@ -57,7 +57,7 @@ module.exports.handler = serverless(app)
 
 const sendtext = (text) => {
     const from = "Vonage APIs"
-    const to = "919361485237"
+    const to = Your_Text_Receiving_PhoneNumber
 
     vonage.message.sendSms(from, to, text, (err, responseData) => {
         if (err) {
