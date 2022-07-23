@@ -33,7 +33,7 @@ router.post("/sendtext", (req, res, next) => {
     console.log(text)
     res.send(text);
     const from = "Vonage APIs"
-    const to = "919361485237"
+    const to = "Your_Text_Receiving_PhoneNumber"
 
     vonage.message.sendSms(from, to, text, (err, responseData) => {
         if (err) {
