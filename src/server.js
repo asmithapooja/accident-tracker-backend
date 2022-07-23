@@ -19,8 +19,8 @@ const app = express()
 app.use(cors());
 
 const vonage = new nexmo({
-    apiKey: "b140fa89",
-    apiSecret: "xTMgEcNoNgC5XdjY"
+    apiKey: api_key,
+    apiSecret: api_secret
   })
 
 
